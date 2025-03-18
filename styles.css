@@ -173,19 +173,14 @@ html, body {
 
 
 #about {
-      
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 0;
-    
-   
-        min-height: 100vh; /* Full viewport height */
-        margin-bottom: 50px; /* Adjust the space between sections */
-    
-    
+    padding: 50px 0;
+    min-height: auto;
+    margin-bottom: 50px;
 }
 
 #about h1 {
@@ -202,26 +197,39 @@ html, body {
 }
 
 #about p {
-    font-size: 28px;
-    color: white;
-    line-height: 1.5;
-    max-width: 100%;
-    margin: 0 auto; /* Centers the text block */
-    font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: white;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0 auto; /* Centers the text block */
+  font-family: 'Montserrat', sans-serif;
 }
 
 #about .about-content {
-    background-color: linear-gradient( purple,darkblue,orange);
+    background-color: transparent;
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center; /* Centers content */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100%;
+    padding: 20px;
 }
 
 .about-text {
     width: 100%; /* Adjust width for better readability */
 }
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 40px;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
  /* big Screens */  
 
@@ -448,44 +456,6 @@ overflow-x: hidden;
   gap: 20px; /* Adjust the gap between sections */
 }
 
-/* Student Coordinators (Left) */
-.student-coordinators {
-  width: 35%;
-  text-align: left;
-  margin-left: 20px;
-}
-
-/* Faculty Coordinators (Middle) */
-.faculty-coordinators {
-  width: 30%;
-  margin-right: 90px;
-  text-align: center;
-}
-
-/* Location (Right) */
-.location {
-  width: 35%;
-  text-align: right;
-  margin-right: 20px;
-}
-
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-  .coordinators-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .student-coordinators,
-  .faculty-coordinators,
-  .location {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* General Styles for Coordinators */
 .coordinators {
   font-size: large;
@@ -493,38 +463,191 @@ overflow-x: hidden;
   margin-bottom: 20px;
   color: whitesmoke;
   text-shadow: 
-      0 0 5px #001f4d,   /* Dark blue glow */
-      0 0 10px #ff6f00,  /* Bright orange glow */
-      0 0 15px #ff3d00;  /* Darker orange glow */
+      0 0 5px #001f4d,
+      0 0 10px #ff6f00,
+      0 0 15px #ff3d00;
+  text-align: center;
 }
 
+.coordinators p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+/* Student Coordinators (Left) */
+.student-coordinators {
+  width: 35%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+/* Faculty Coordinators (Middle) */
+.faculty-coordinators {
+  width: 30%;
+  text-align: center;
+}
+
+/* Location (Right) */
+.location {
+  width: 35%;
+  text-align: center;
+  margin-right: 20px;
+}
 
 /* Styling for Subheadings */
-.sub-title1 {
+.sub-title1, .sub-title2 {
   font-size: 1.2em;
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 10px;
-  color: white; /* Dark blue for contrast */
+  color: white;
   text-shadow: 
-      0 0 5px #001f4d,   /* Dark blue glow */
-      0 0 10px #ff6f00,  /* Bright orange glow */
-      0 0 15px #ff3d00;  /* Darker orange glow */
+      0 0 5px #001f4d,
+      0 0 10px #ff6f00,
+      0 0 15px #ff3d00;
+  text-align: center;
 }
 
 .sub-title2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
-  margin-bottom: 10px;
-  margin-right: 200px;
-  color: white; /* Dark blue for contrast */
-  text-shadow: 
-      0 0 5px #001f4d,   /* Dark blue glow */
-      0 0 10px #ff6f00,  /* Bright orange glow */
-      0 0 15px #ff3d00;  /* Darker orange glow */
+  margin-right: 0;
 }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .coordinators-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .student-coordinators,
+  .faculty-coordinators,
+  .location {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .coordinators {
+    padding: 15px;
+    margin: 10px auto;
+    max-width: none;
+    width: 100%;
+  }
+
+  .coordinators p {
+    justify-content: center;
+    margin: 15px 0;
+    padding-left: 0;
+  }
+
+  .sub-title1, .sub-title2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .location iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .event-card {
+    margin: 10px 0;
+    height: 300px;
+  }
+
+  .event-card-front h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .event-card-details {
+    padding: 15px;
+  }
+
+  .event-card-details button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  #about {
+    padding: 40px 20px;
+  }
+
+  #about h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  #about p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    padding: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    height: 250px;
+  }
+
+  .event-card-front h3 {
+    font-size: 18px;
+  }
+
+  .event-card-details button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  #about h1 {
+    font-size: 32px;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+
+  .coordinators {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .coordinators p {
+    margin: 12px 0;
+    padding-left: 10px;
+  }
+
+  .sub-title1, .sub-title2 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+
 /* Styling for Google Maps Iframe */
 .location iframe {
   width: 100%;
@@ -537,7 +660,7 @@ overflow-x: hidden;
 .footer {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   color: white; 
 }
 
@@ -554,5 +677,41 @@ overflow-x: hidden;
 
   .location iframe {
     height: 200px;
+  }
+}
+
+/* Coordinator Entry Styles */
+.coordinator-entry {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.coordinator-entry p {
+  margin: 5px 0;
+}
+
+.coordinator-entry .phone-number {
+  color: white;
+  font-size: 0.95em;
+  margin-top: 8px;
+}
+
+/* Update existing coordinator styles */
+.coordinators {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.coordinators p {
+  margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .coordinator-entry {
+    margin-bottom: 20px;
+  }
+  
+  .coordinator-entry .phone-number {
+    font-size: 0.9em;
   }
 }
