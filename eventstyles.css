@@ -1,0 +1,354 @@
+/* General Styles */
+html {
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('images/evebg3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 900px) {
+  body {
+    background-attachment: scroll; /* Prevents zoom issues on mobile */
+    background-size: contain; /* Ensures full visibility */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: top center;
+  }
+}
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  min-height: 70px; /* Bootstrap default */
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;        
+  text-decoration: rosybrown; /* No underline */
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;      /* Space around the text */
+  font-size: 30px;
+  text-align: right;
+  text-shadow:0 0 5px #001f4d,   /* Dark blue glow */
+  0 0 10px #ff6f00,  /* Bright orange glow */
+  0 0 15px #ff3d00;  /* Darker orange glow */
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Enhance glow effect on hover */
+.navbar-nav .nav-link:hover {
+  color: lightcoral;
+}
+
+/* Make active nav item glow brighter */
+.navbar-nav .nav-link.active {
+  text-shadow:0 0 5px #001f4d,   /* Dark blue glow */
+  0 0 10px #ff6f00,  /* Bright orange glow */
+  0 0 15px #ff3d00;  /* Darker orange glow */
+}
+
+
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    display: block; /* Stacks menu items vertically */
+    margin-bottom: 5px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px; /* Reduce size for smaller screens */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+/* Event Title */
+.event-title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+@media (max-width: 780px) {
+  .event-title {
+    margin-top: 90px; /* Reduce margin for smaller screens */
+    font-size: 40px; /* Slightly smaller for tablets */
+  }
+}
+
+
+
+/* Main container for image + button + rules */
+.event-container {
+  display: flex;
+  align-items: flex-start; /* Aligns everything to the top */
+  justify-content: space-between; /* Ensures space between sections */
+  margin-top: 50px;
+  padding: 0 5%;
+  gap: 30px; /* Adds spacing between sections */
+}
+
+/* 📱 Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .event-container {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items */
+    text-align: center; /* Ensures text is centered */
+    margin-top: 30px; /* Reduces top margin */
+  }
+
+}
+
+/* Left Side: Image & Button */
+.left-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .left-side {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Ensures content stays centered */
+  }
+}
+
+/* Image */
+.event-image {
+  width: 99%;
+  
+  height: auto;
+  border-radius: 5%;
+}
+.image-container {
+  width: 75%;
+  display: flex;
+}
+
+@media (max-width: 740px) {
+  .image-container {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .event-image {
+    max-width: 100%; /* Allows better scaling */
+  }
+}
+
+/* Register Button */
+.register-container {
+  margin-top: 20px;
+  margin-right: 10%;
+}
+@media (max-width: 768px) {
+  .your-element {
+    margin-top: 10px; /* Reduce top margin for better spacing */
+    margin-right: 5%; /* Prevents unnecessary right-side spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .your-element {
+    margin-top: 5px; /* Further reduce margin for smaller devices */
+    margin-right: 0; /* Removes extra right margin on very small screens */
+    text-align: center; /* Ensures proper alignment */
+  }
+}
+
+.register-btn {
+  background-color: rgb(220, 123, 220);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  button, .btn {
+    font-size: 16px; /* Slightly smaller for smaller screens */
+    padding: 12px 18px; /* Adjusts padding for better fit */
+    min-width: 150px; /* Ensures buttons are easier to tap */
+    display: block; /* Makes buttons take full width if needed */
+    margin: 10px auto; /* Centers button on mobile */
+  }
+}
+
+.register-btn:hover {
+  background-color: #0088cc;
+}
+@media (max-width: 480px) {
+  .register-btn {
+    font-size: 14px; /* Smaller font on very small screens */
+    padding: 6px 15px; /* Adjust padding */
+  }
+}
+
+/* Rules Section */
+.rules-container {
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  line-height: 1.8;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: -5%; /* Moves it slightly left */
+}
+
+@media (max-width: 768px) {
+  .rules-container {
+    width: 100%; /* Uses more width for better readability */
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center; /* Ensures text is properly aligned */
+  }
+}
+
+@media (max-width: 480px) {
+  .rules-container {
+    width: 100%; /* Almost full width on smaller screens */
+    padding: 10px; /* Adds spacing for better readability */
+
+  }
+}
+
+/* Overlay for visibility */
+.rules-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better visibility */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  text-align: left;
+  font-size: 20px; /* Increased font size */
+  font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 768px) {
+  .rules-overlay {
+    width: 100%; /* Uses more screen space */
+    font-size: 18px; /* Adjusts for readability */
+    padding: 35px; /* Reduces padding */
+    text-align: center; /* Centers text */
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rules-overlay {
+    width: 100%; /* Almost full width */
+    font-size: 16px; /* Further reduced for small phones */
+    padding: px; /* More compact spacing */
+  }
+}
+
+/* Rules Heading */
+.rules-overlay h3 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+@media (max-width: 768px) {
+  .rules-overlay h3 {
+    font-size: 22px; /* Slightly smaller for tablets */
+    text-align: center; /* Centers text */
+  }
+}
+
+@media (max-width: 480px) {
+  .rules-overlay h3 {
+    font-size: 20px; /* Further reduces for small screens */
+    text-align: center; /* Ensures proper alignment */
+  }
+}
+
+/* Student Coordinators */
+.sub-title {
+  font-size: 20px; /* Increased size */
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .sub-title {
+    font-size: 18px; /* Slightly smaller for tablets */
+    text-align: center; /* Centers text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-title {
+    font-size: 16px; /* Further reduced for small screens */
+    text-align: center;
+  }
+}
+
+.rules-overlay p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .rules-overlay p {
+    font-size: 16px;
+    text-align: center; /* Centers text for better layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .rules-overlay p {
+    font-size: 14px;
+    margin: 10px 0; /* Adds spacing for better readability */
+  }
+}
