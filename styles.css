@@ -207,6 +207,7 @@ html, body {
     line-height: 1.5;
     max-width: 100%;
     margin: 0 auto; /* Centers the text block */
+    font-family: 'Montserrat', sans-serif;
 }
 
 #about .about-content {
