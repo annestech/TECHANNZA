@@ -198,7 +198,7 @@ html, body {
         0 0 15px #ff3d00;  /* Darker orange glow */
     margin-top: 0; 
     padding-top: 0;       
-        
+    font-family: 'Orbitron', sans-serif;    
 }
 
 #about p {
@@ -226,6 +226,7 @@ html, body {
 
  #about h1 {
   font-size: 60px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 #about p {
