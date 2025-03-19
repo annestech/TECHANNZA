@@ -93,7 +93,7 @@ body, html {
     font-weight: lighter;
 }
 .banner {
-    margin-top: 80px; /* Push the logo, h2, and h4 below the navbar */
+    margin-top: 300px; /* Push the logo, h2, and h4 below the navbar */
     text-align: center;
     color: white;
 }
