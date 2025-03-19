@@ -55,64 +55,8 @@ body, html {
   .navbar-nav .nav-item:last-child .nav-link {
     margin-right: 0; /* Remove margin for the last item */
   }
-  
-  /* Foreground Section */
 
-.header {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-/* Logo Styling */
-.logo {
-    width: 60px; /* Adjust as needed */
-    height: auto;
-    margin-right: 15px;
-}
-
-/* Header Text */
-.header-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-text h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.header-text h4 {
-    font-size: 16px;
-    font-weight: lighter;
-}
-.banner {
-    margin-top: 300px; /* Push the logo, h2, and h4 below the navbar */
-    text-align: center;
-    color: white;
-}
-  
-  #home {
-    text-align: center;
-    padding: 150px 20px;
-    position: relative;
-    
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Orbitron', sans-serif;
-}
-    
-   
  #home h1 {
     color: white; 
     font-size: 50px;
