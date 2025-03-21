@@ -323,7 +323,6 @@ section {
 
     .college-info {
         padding: 10px;
-        font-size: 20px;
     }
 
     .college-accreditation {
@@ -334,7 +333,6 @@ section {
 @media (max-height: 600px) {
     .college-info {
         padding: 10px;
-         font-size: 20px;
     }
 
     .college-logo {
