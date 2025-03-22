@@ -359,6 +359,7 @@ section {
 
     .department-info h3 {
         margin: 3px 0;
+        font-size: 5px;
     }
 
      @media (max-width: 768px) {
