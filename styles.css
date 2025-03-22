@@ -169,7 +169,7 @@ section {
 
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 20px;
@@ -178,8 +178,7 @@ section {
 .left-logo {
     width: 80px;
     height: 80px;
-    margin-right: 15px;
-    flex-shrink: 0;
+    margin-right: 0;
 }
 
 .left-logo img {
@@ -189,20 +188,15 @@ section {
 }
 
 .center-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.college-text {
+    flex: 1;
     text-align: center;
+    padding: 0 20px;
 }
 
 .right-logos {
     display: flex;
     gap: 15px;
-    margin-left: 15px;
-    flex-shrink: 0;
+    margin-left: 0;
 }
 
 .right-logo {
@@ -313,13 +307,6 @@ section {
         width: 100%;
     }
 
-    .center-content {
-        flex-direction: row;
-        gap: 3px;
-        align-items: center;
-        width: 100%;
-    }
-
     .left-logo {
         width: 35px;
         height: 35px;
@@ -330,7 +317,6 @@ section {
     .right-logos {
         gap: 3px;
         flex-shrink: 0;
-        margin-left: 2px;
     }
 
     .right-logo {
@@ -338,10 +324,10 @@ section {
         height: 25px;
     }
 
-    .college-text {
+    .center-content {
         padding: 0 3px;
         flex: 1;
-        min-width: 0;
+        min-width: 0; /* This helps with text overflow */
     }
 
     .college-info h1 {
