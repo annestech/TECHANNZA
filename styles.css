@@ -67,7 +67,7 @@ section {
 
 #home h3 {
     color: white; 
-    font-size: clamp(1.5rem, 3vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     text-align: center; 
     margin: 0;
     padding-top: clamp(2vh, 4vh, 6vh);
