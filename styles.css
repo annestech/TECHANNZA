@@ -253,17 +253,12 @@ section {
 }
 
 .event-title {
-    font-size: clamp(3.5rem, 8vw, 7rem);
-    font-weight: 700;
-    margin: 10px 0;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 
-        0 0 5px #001f4d,
-        0 0 10px #ff6f00,
-        0 0 15px #ff3d00;
-    letter-spacing: 2px;
+  width: 100%; /* Make it responsive */
+  max-width: 600px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline spacing issues */
+  margin: 0 auto; /* Center the image */
 }
-
 .event-date {
     font-size: clamp(1.8rem, 3.5vw, 3rem);
     font-family: 'Orbitron', sans-serif;
@@ -366,9 +361,17 @@ section {
         margin: 3px 0;
     }
 
+     @media (max-width: 768px) {
     .event-title {
-        margin: 5px 0;
+      max-width: 80%; /* Reduce size for tablets */
     }
+  }
+  
+  @media (max-width: 480px) {
+    .event-title {
+      max-width: 90%; /* Further reduce size for smaller screens */
+    }
+  }
 
     .event-date {
         margin-top: 3px;
