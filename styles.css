@@ -232,7 +232,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 2px;
-    padding: 0;
+    padding-top: 3px;
 }
 
 .department-info h2 {
