@@ -194,11 +194,10 @@ body {
     font-weight: 600;
     text-align: center;
     color: white; /* Ensures contrast */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
     display: inline-block;
     padding: 5px 15px;
-    border-radius: 5px;
     margin: auto;
+    margin-top:-10px;
 }
 
 /* Register Button */
