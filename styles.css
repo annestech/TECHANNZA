@@ -231,8 +231,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2px;
-    padding-top: 3px;
+    margin-top: 0px;
+    padding-top: 2px;
 }
 
 .department-info h2 {
@@ -350,7 +350,7 @@ section {
     }
 
     .department-info {
-        padding: 0;
+        padding-top: 2px;
     }
 
     .department-info h2 {
