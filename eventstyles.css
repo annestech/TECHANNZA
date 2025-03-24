@@ -285,6 +285,27 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 1.8rem;
+    }
+
+    .event-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .event-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design */
 @media (max-width: 992px) {
   .event-container {
     flex-direction: column;
