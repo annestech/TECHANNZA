@@ -350,7 +350,8 @@ section {
     }
 
     .department-info {
-        padding-top: 2px;
+         margin-top: -5px; /* Moves it higher */
+        padding-top: 0px;  /* Adjust padding */
     }
 
     .department-info h2 {
