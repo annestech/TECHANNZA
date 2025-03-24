@@ -398,6 +398,9 @@ section {
     .department-info {
         margin-top: -50px;
     }
+     .department-info h2 {
+        margin-top:-20px;
+    }
 }
 
 /* Responsive Adjustments */
