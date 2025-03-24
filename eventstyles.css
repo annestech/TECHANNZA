@@ -191,12 +191,14 @@ body {
 
 .event-subtitle {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    color: #ff4081; /* Magenta shade */
-    margin-top: -10px; /* Adjust spacing */
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+    color: white; /* Ensures contrast */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: auto;
 }
 
 /* Register Button */
