@@ -303,8 +303,8 @@ section {
     }
 
     .left-logo {
-    width: 50px; /* Increase the size */
-    height: 55px; /* Increase the size */
+    width: 60px; /* Increase the size */
+    height: 65px; /* Increase the size */
     flex-shrink: 0;
     margin-right: 2px;
     margin-top: -5px; /* Adjust this value to move the logo up */
